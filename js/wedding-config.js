@@ -1,16 +1,3 @@
-import joinedHandsImg from '../assets/images/nikah_young_hands_luminous_1795031189849.jpg';
-import redRoseClusterImg from '../assets/images/red_rose_floral_cluster_1795030453782.jpg';
-import redRoseBannerImg from '../assets/images/red_rose_banner_spray_1795030454623.jpg';
-import gardenPavilionImg from '../assets/images/nikah_garden_pavilion_1795030454162.jpg';
-
-export interface ScheduleEvent {
-  id: string;
-  indexLabel: string;
-  title: string;
-  time: string;
-  subtitle: string;
-}
-
 export const WEDDING_DATA = {
   brand: {
     english: 'ULFAT-E-NIKAH',
@@ -34,19 +21,19 @@ export const WEDDING_DATA = {
   schedule: [
     {
       id: 'nikah',
-      indexLabel: '01',
+      indexLabel: '01 · Ceremony Evening',
       title: 'NIKAH',
       time: '8:00 PM',
       subtitle: 'Sacred vows, heartfelt prayers, and the union of two families.',
     },
     {
       id: 'dinner',
-      indexLabel: '02',
+      indexLabel: '02 · Ceremony Evening',
       title: 'DINNER',
       time: '9:00 PM',
       subtitle: 'An evening banquet celebrating joy, warmth, and togetherness.',
     },
-  ] as ScheduleEvent[],
+  ],
   venue: {
     name: 'LALA ZAAR MARRIAGE LAWN',
     location: 'Near Al-syad Center, Quaid-Abad',
@@ -73,9 +60,9 @@ export const WEDDING_DATA = {
     message: 'With love in our hearts,\nwe await your gracious presence.',
   },
   assets: {
-    joinedHands: joinedHandsImg,
-    roseCluster: redRoseClusterImg,
-    roseBanner: redRoseBannerImg,
-    gardenPavilion: gardenPavilionImg,
+    joinedHands: './assets/images/nikah_young_hands_luminous.jpg',
+    roseCluster: './assets/images/red_rose_floral_cluster.jpg',
+    roseBanner: './assets/images/red_rose_banner_spray.jpg',
+    gardenPavilion: './assets/images/nikah_garden_pavilion.jpg',
   },
-} as const;
+};

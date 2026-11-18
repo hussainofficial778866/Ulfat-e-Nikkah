@@ -22,9 +22,553 @@
       href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="bg-[#F9FCFF] text-[#13293D] antialiased selection:bg-[#FCECEF] selection:text-[#9E1B32]">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body>
+    <canvas id="petal-canvas" class="petal-canvas" aria-hidden="true"></canvas>
+
+    <!-- ============================================================ -->
+    <!-- 1. OPENING INVITATION CARD                                   -->
+    <!-- ============================================================ -->
+    <main id="opening-screen" class="opening-screen">
+      <div class="ambient-wash ambient-wash--top" aria-hidden="true"></div>
+      <div class="ambient-wash ambient-wash--bottom" aria-hidden="true"></div>
+
+      <div class="card-perspective">
+        <div
+          id="opening-card"
+          class="opening-card"
+          role="button"
+          tabindex="0"
+          aria-label="Open Nikah Invitation for Eman Babar and Sheikh Saud Saeed"
+        >
+          <div class="opening-card__inner">
+            <!-- Corner Botanical Rose Clusters -->
+            <div class="rose-cluster rose-cluster--tl" aria-hidden="true">
+              <div class="rose-cluster__mask">
+                <img data-img-src="rose-cluster" alt="" class="rose-cluster__img" referrerpolicy="no-referrer" />
+              </div>
+            </div>
+            <div class="rose-cluster rose-cluster--br" aria-hidden="true">
+              <div class="rose-cluster__mask">
+                <img data-img-src="rose-cluster" alt="" class="rose-cluster__img" referrerpolicy="no-referrer" />
+              </div>
+            </div>
+
+            <!-- Corner Line Filigree -->
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" class="corner-filigree corner-filigree--tl">
+              <path d="M2 24V7C2 4.23858 4.23858 2 7 2H24" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" />
+              <path d="M6.5 16V8.5C6.5 7.39543 7.39543 6.5 8.5 6.5H16" stroke="#C97A8A" stroke-width="0.9" stroke-linecap="round" stroke-opacity="0.7" />
+              <circle cx="6.5" cy="6.5" r="1.5" fill="#9E1B32" fill-opacity="0.55" />
+            </svg>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" class="corner-filigree corner-filigree--tr">
+              <path d="M2 24V7C2 4.23858 4.23858 2 7 2H24" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" />
+              <path d="M6.5 16V8.5C6.5 7.39543 7.39543 6.5 8.5 6.5H16" stroke="#C97A8A" stroke-width="0.9" stroke-linecap="round" stroke-opacity="0.7" />
+              <circle cx="6.5" cy="6.5" r="1.5" fill="#9E1B32" fill-opacity="0.55" />
+            </svg>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" class="corner-filigree corner-filigree--bl">
+              <path d="M2 24V7C2 4.23858 4.23858 2 7 2H24" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" />
+              <path d="M6.5 16V8.5C6.5 7.39543 7.39543 6.5 8.5 6.5H16" stroke="#C97A8A" stroke-width="0.9" stroke-linecap="round" stroke-opacity="0.7" />
+              <circle cx="6.5" cy="6.5" r="1.5" fill="#9E1B32" fill-opacity="0.55" />
+            </svg>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" class="corner-filigree corner-filigree--br">
+              <path d="M2 24V7C2 4.23858 4.23858 2 7 2H24" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" />
+              <path d="M6.5 16V8.5C6.5 7.39543 7.39543 6.5 8.5 6.5H16" stroke="#C97A8A" stroke-width="0.9" stroke-linecap="round" stroke-opacity="0.7" />
+              <circle cx="6.5" cy="6.5" r="1.5" fill="#9E1B32" fill-opacity="0.55" />
+            </svg>
+
+            <!-- 3D Opening Doors & Soft Radiance -->
+            <div class="opening-glow" aria-hidden="true"></div>
+            <div class="opening-door opening-door--left" aria-hidden="true"></div>
+            <div class="opening-door opening-door--right" aria-hidden="true"></div>
+
+            <!-- Card Content -->
+            <div class="opening-card__content">
+              <p lang="ur" dir="rtl" class="urdu-title" data-bind="brand-urdu">اُلفتِ نکاح</p>
+              <h1 class="brand-title" data-bind="brand-english">ULFAT-E-NIKAH</h1>
+              <p class="opening-kicker" data-bind="opening-kicker">A Celebration of Nikah</p>
+
+              <!-- TWO YOUTHFUL LUMINOUS JOINED HANDS -->
+              <div class="hands-showcase">
+                <div class="hands-showcase__halo" aria-hidden="true"></div>
+                <div class="hands-showcase__motion">
+                  <div class="hands-showcase__mask">
+                    <img
+                      id="joined-hands-img"
+                      src="./assets/images/nikah_young_hands_luminous.jpg"
+                      alt="Young groom's hand from the left and young bride's hand from the right gently holding each other in the center"
+                      referrerpolicy="no-referrer"
+                      class="hands-showcase__img"
+                    />
+                    <div class="hands-showcase__sweep" aria-hidden="true"></div>
+                  </div>
+
+                  <div id="joined-hands-fallback" class="hands-showcase__fallback is-hidden">
+                    <svg viewBox="0 0 240 120" fill="none" aria-label="Illustration of bride and groom holding hands" width="208" height="112">
+                      <path d="M16 64 C52 60, 82 54, 114 58 C126 60, 134 65, 138 69" stroke="#3C84B4" stroke-width="2.2" stroke-linecap="round" />
+                      <path d="M224 58 C188 58, 158 62, 128 66 C116 68, 108 66, 102 62" stroke="#9E1B32" stroke-width="2.2" stroke-linecap="round" />
+                      <path d="M108 62 C114 68, 124 68, 130 62" stroke="#496A85" stroke-width="1.6" stroke-linecap="round" />
+                    </svg>
+                  </div>
+
+                  <div class="hands-showcase__sparkle" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 2L13.4 10.2L21.5 11.6L13.4 13L12 21.2L10.6 13L2.5 11.6L10.6 10.2L12 2Z" fill="#FFFFFF" />
+                    </svg>
+                  </div>
+
+                  <span class="hands-petal hands-petal--left" aria-hidden="true"></span>
+                  <span class="hands-petal hands-petal--right" aria-hidden="true"></span>
+                </div>
+              </div>
+
+              <div class="sky-rose-divider" aria-hidden="true">
+                <span class="sky-rose-divider__line sky-rose-divider__line--left"></span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 4.5C13.6 6.7 15.8 7.5 16.4 9.8C17 12.1 14.9 14.4 12 14.4C9.1 14.4 7 12.1 7.6 9.8C8.2 7.5 10.4 6.7 12 4.5Z" fill="#9E1B32" fill-opacity="0.85" />
+                  <path d="M12 7.2C13 8.5 14 9.4 14 10.9C14 12.1 13.1 13 12 13C10.9 13 10 12.1 10 10.9C10 9.4 11 8.5 12 7.2Z" fill="#FCECEF" fill-opacity="0.4" />
+                  <path d="M12 14.5V19.5M12 17C10.3 16.5 9.2 15.6 8.6 14.8M12 17C13.7 16.5 14.8 15.6 15.4 14.8" stroke="#4F7963" stroke-width="1.2" stroke-linecap="round" />
+                </svg>
+                <span class="sky-rose-divider__line sky-rose-divider__line--right"></span>
+              </div>
+
+              <div class="opening-preview">
+                <p class="opening-preview__names">
+                  <span data-bind="bride">Eman Babar</span>
+                  <span class="opening-preview__amp">&amp;</span>
+                  <span data-bind="groom">Sheikh Saud Saeed</span>
+                </p>
+                <p class="opening-preview__date tabular-nums">
+                  <span data-bind="date-full">23 December 2026</span> · 8:00 PM
+                </p>
+              </div>
+
+              <span class="opening-cta">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z" />
+                  <path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10" />
+                </svg>
+                <span>Open Invitation</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <p class="opening-hint">Tap card to unveil invitation</p>
+      </div>
+    </main>
+
+    <!-- ============================================================ -->
+    <!-- 2. MAIN INVITATION EXPERIENCE                                -->
+    <!-- ============================================================ -->
+    <div id="main-invitation" class="main-invitation is-hidden">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a href="#invitation" class="site-header__brand" data-bind="brand-english">ULFAT-E-NIKAH</a>
+          <nav class="site-header__nav" aria-label="Invitation sections">
+            <a href="#invitation">Invitation</a>
+            <a href="#date">Date</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#venue">Venue</a>
+          </nav>
+          <a href="#rsvp" class="site-header__rsvp">RSVP</a>
+        </div>
+      </header>
+
+      <main>
+        <!-- HERO / NAMES REVEAL -->
+        <section id="invitation" class="hero-section">
+          <div class="hero-halo" aria-hidden="true"></div>
+          <div class="hero-container">
+            <div class="rose-spray hero-stagger-1" aria-hidden="true">
+              <div class="rose-spray__mask">
+                <img data-img-src="rose-banner" alt="" class="rose-spray__img" referrerpolicy="no-referrer" />
+              </div>
+            </div>
+
+            <div class="hero-stagger-2">
+              <p lang="ar" dir="rtl" class="bismillah" data-bind="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+              <p lang="ur" dir="rtl" class="hero-urdu" data-bind="brand-urdu">اُلفتِ نکاح</p>
+              <p class="hero-blessings" data-bind="blessings-lead">With the blessings of love and family</p>
+            </div>
+
+            <div class="hero-names-wrap hero-stagger-3">
+              <div class="hero-names-glow" aria-hidden="true"></div>
+              <h1 class="hero-names">
+                <span class="hero-names__line" data-bind="bride">Eman Babar</span>
+                <span class="hero-names__amp">&amp;</span>
+                <span class="hero-names__line" data-bind="groom">Sheikh Saud Saeed</span>
+              </h1>
+            </div>
+
+            <div class="hero-meta hero-stagger-4">
+              <div class="sky-rose-divider" aria-hidden="true">
+                <span class="sky-rose-divider__line sky-rose-divider__line--left"></span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 4.5C13.6 6.7 15.8 7.5 16.4 9.8C17 12.1 14.9 14.4 12 14.4C9.1 14.4 7 12.1 7.6 9.8C8.2 7.5 10.4 6.7 12 4.5Z" fill="#9E1B32" fill-opacity="0.85" />
+                  <path d="M12 7.2C13 8.5 14 9.4 14 10.9C14 12.1 13.1 13 12 13C10.9 13 10 12.1 10 10.9C10 9.4 11 8.5 12 7.2Z" fill="#FCECEF" fill-opacity="0.4" />
+                  <path d="M12 14.5V19.5M12 17C10.3 16.5 9.2 15.6 8.6 14.8M12 17C13.7 16.5 14.8 15.6 15.4 14.8" stroke="#4F7963" stroke-width="1.2" stroke-linecap="round" />
+                </svg>
+                <span class="sky-rose-divider__line sky-rose-divider__line--right"></span>
+              </div>
+              <p class="hero-meta__text tabular-nums" data-bind="hero-meta">
+                23 December 2026 · LALA ZAAR MARRIAGE LAWN
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- WEDDING POETRY -->
+        <section class="poetry-section">
+          <div class="poetry-box" data-reveal>
+            <p id="poetry-lines" class="poetry-text"></p>
+          </div>
+        </section>
+
+        <!-- DATE REVEAL WITH SCRATCH ME INTERACTION -->
+        <section id="date" class="date-section">
+          <div class="date-card" data-reveal>
+            <div class="rose-cluster rose-cluster--tl" aria-hidden="true">
+              <div class="rose-cluster__mask">
+                <img data-img-src="rose-cluster" alt="" class="rose-cluster__img" referrerpolicy="no-referrer" />
+              </div>
+            </div>
+            <div class="rose-cluster rose-cluster--br" aria-hidden="true">
+              <div class="rose-cluster__mask">
+                <img data-img-src="rose-cluster" alt="" class="rose-cluster__img" referrerpolicy="no-referrer" />
+              </div>
+            </div>
+
+            <div class="date-card__inner">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" class="sparkle-accent sparkle-accent--tr">
+                <path d="M8 0.5L9.4 6.6L15.5 8L9.4 9.4L8 15.5L6.6 9.4L0.5 8L6.6 6.6L8 0.5Z" fill="#7EC0E8" fill-opacity="0.7" />
+              </svg>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" class="sparkle-accent sparkle-accent--bl">
+                <path d="M8 0.5L9.4 6.6L15.5 8L9.4 9.4L8 15.5L6.6 9.4L0.5 8L6.6 6.6L8 0.5Z" fill="#7EC0E8" fill-opacity="0.7" />
+              </svg>
+
+              <p class="section-kicker">Save the Date</p>
+
+              <div id="scratch-container" class="scratch-container">
+                <div class="date-display">
+                  <p class="date-weekday" data-bind="date-weekday">Wednesday</p>
+                  <span class="date-day tabular-nums" data-bind="date-day">23</span>
+                  <span class="date-month" data-bind="date-month">December</span>
+                  <span class="date-year tabular-nums" data-bind="date-year">2026</span>
+                </div>
+
+                <div id="scratch-overlay" class="scratch-overlay">
+                  <canvas id="scratch-canvas" class="scratch-canvas" aria-label="Scratch off veil to reveal wedding date"></canvas>
+                  <button type="button" id="scratch-reveal-btn" class="scratch-fallback-btn">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#9E1B32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3z" />
+                    </svg>
+                    <span>Tap to Reveal</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="sky-rose-divider" aria-hidden="true">
+                <span class="sky-rose-divider__line sky-rose-divider__line--left"></span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 4.5C13.6 6.7 15.8 7.5 16.4 9.8C17 12.1 14.9 14.4 12 14.4C9.1 14.4 7 12.1 7.6 9.8C8.2 7.5 10.4 6.7 12 4.5Z" fill="#9E1B32" fill-opacity="0.85" />
+                  <path d="M12 7.2C13 8.5 14 9.4 14 10.9C14 12.1 13.1 13 12 13C10.9 13 10 12.1 10 10.9C10 9.4 11 8.5 12 7.2Z" fill="#FCECEF" fill-opacity="0.4" />
+                  <path d="M12 14.5V19.5M12 17C10.3 16.5 9.2 15.6 8.6 14.8M12 17C13.7 16.5 14.8 15.6 15.4 14.8" stroke="#4F7963" stroke-width="1.2" stroke-linecap="round" />
+                </svg>
+                <span class="sky-rose-divider__line sky-rose-divider__line--right"></span>
+              </div>
+
+              <div id="countdown-grid" class="countdown-grid" aria-label="Countdown to Nikah">
+                <div class="countdown-cell">
+                  <span id="cd-days" class="countdown-value tabular-nums">00</span>
+                  <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-cell">
+                  <span id="cd-hours" class="countdown-value tabular-nums">00</span>
+                  <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-cell">
+                  <span id="cd-mins" class="countdown-value tabular-nums">00</span>
+                  <span class="countdown-label">Mins</span>
+                </div>
+                <div class="countdown-cell">
+                  <span id="cd-secs" class="countdown-value countdown-value--accent tabular-nums">00</span>
+                  <span class="countdown-label">Secs</span>
+                </div>
+              </div>
+              <p id="countdown-arrived" class="countdown-arrived is-hidden">The blessed day has arrived</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- EVENT TIMELINE -->
+        <section id="schedule" class="schedule-section">
+          <div class="section-container">
+            <div class="section-header" data-reveal>
+              <p class="section-kicker">Evening Programme</p>
+              <h2 class="section-heading">Wedding Schedule</h2>
+              <div class="sky-rose-divider" aria-hidden="true">
+                <span class="sky-rose-divider__line sky-rose-divider__line--left"></span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 4.5C13.6 6.7 15.8 7.5 16.4 9.8C17 12.1 14.9 14.4 12 14.4C9.1 14.4 7 12.1 7.6 9.8C8.2 7.5 10.4 6.7 12 4.5Z" fill="#9E1B32" fill-opacity="0.85" />
+                  <path d="M12 7.2C13 8.5 14 9.4 14 10.9C14 12.1 13.1 13 12 13C10.9 13 10 12.1 10 10.9C10 9.4 11 8.5 12 7.2Z" fill="#FCECEF" fill-opacity="0.4" />
+                  <path d="M12 14.5V19.5M12 17C10.3 16.5 9.2 15.6 8.6 14.8M12 17C13.7 16.5 14.8 15.6 15.4 14.8" stroke="#4F7963" stroke-width="1.2" stroke-linecap="round" />
+                </svg>
+                <span class="sky-rose-divider__line sky-rose-divider__line--right"></span>
+              </div>
+            </div>
+
+            <div class="schedule-grid">
+              <article class="schedule-card" data-reveal>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" class="corner-filigree corner-filigree--tl">
+                  <path d="M2 24V7C2 4.23858 4.23858 2 7 2H24" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" />
+                  <path d="M6.5 16V8.5C6.5 7.39543 7.39543 6.5 8.5 6.5H16" stroke="#C97A8A" stroke-width="0.9" stroke-linecap="round" stroke-opacity="0.7" />
+                  <circle cx="6.5" cy="6.5" r="1.5" fill="#9E1B32" fill-opacity="0.55" />
+                </svg>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" class="corner-filigree corner-filigree--br">
+                  <path d="M2 24V7C2 4.23858 4.23858 2 7 2H24" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" />
+                  <path d="M6.5 16V8.5C6.5 7.39543 7.39543 6.5 8.5 6.5H16" stroke="#C97A8A" stroke-width="0.9" stroke-linecap="round" stroke-opacity="0.7" />
+                  <circle cx="6.5" cy="6.5" r="1.5" fill="#9E1B32" fill-opacity="0.55" />
+                </svg>
+
+                <p class="section-kicker tabular-nums" data-bind="schedule-0-index">01 · Ceremony Evening</p>
+                <h3 class="schedule-card__title" data-bind="schedule-0-title">NIKAH</h3>
+                <div class="schedule-card__time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                  <span class="tabular-nums" data-bind="schedule-0-time">8:00 PM</span>
+                </div>
+                <div class="schedule-card__rule" aria-hidden="true"></div>
+                <p class="schedule-card__desc" data-bind="schedule-0-subtitle">
+                  Sacred vows, heartfelt prayers, and the union of two families.
+                </p>
+              </article>
+
+              <article class="schedule-card" data-reveal>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" class="corner-filigree corner-filigree--tl">
+                  <path d="M2 24V7C2 4.23858 4.23858 2 7 2H24" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" />
+                  <path d="M6.5 16V8.5C6.5 7.39543 7.39543 6.5 8.5 6.5H16" stroke="#C97A8A" stroke-width="0.9" stroke-linecap="round" stroke-opacity="0.7" />
+                  <circle cx="6.5" cy="6.5" r="1.5" fill="#9E1B32" fill-opacity="0.55" />
+                </svg>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" class="corner-filigree corner-filigree--br">
+                  <path d="M2 24V7C2 4.23858 4.23858 2 7 2H24" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" />
+                  <path d="M6.5 16V8.5C6.5 7.39543 7.39543 6.5 8.5 6.5H16" stroke="#C97A8A" stroke-width="0.9" stroke-linecap="round" stroke-opacity="0.7" />
+                  <circle cx="6.5" cy="6.5" r="1.5" fill="#9E1B32" fill-opacity="0.55" />
+                </svg>
+
+                <p class="section-kicker tabular-nums" data-bind="schedule-1-index">02 · Ceremony Evening</p>
+                <h3 class="schedule-card__title" data-bind="schedule-1-title">DINNER</h3>
+                <div class="schedule-card__time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                  <span class="tabular-nums" data-bind="schedule-1-time">9:00 PM</span>
+                </div>
+                <div class="schedule-card__rule" aria-hidden="true"></div>
+                <p class="schedule-card__desc" data-bind="schedule-1-subtitle">
+                  An evening banquet celebrating joy, warmth, and togetherness.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- VENUE SECTION -->
+        <section id="venue" class="venue-section">
+          <div class="venue-card" data-reveal>
+            <div class="venue-media">
+              <img
+                id="venue-pavilion-img"
+                src="./assets/images/nikah_garden_pavilion.jpg"
+                alt="Watercolor illustration of Lala Zaar Marriage Lawn pavilion with white chiffon and red roses"
+                referrerpolicy="no-referrer"
+                class="venue-media__img"
+              />
+              <div id="venue-pavilion-fallback" class="venue-media__fallback is-hidden">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#9E1B32" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <p class="venue-name" data-bind="venue-name">LALA ZAAR MARRIAGE LAWN</p>
+              </div>
+            </div>
+
+            <div class="venue-body">
+              <div class="venue-icon-badge" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+
+              <p class="section-kicker" style="margin-top: 1rem;">Venue &amp; Directions</p>
+              <h2 class="venue-name" data-bind="venue-name">LALA ZAAR MARRIAGE LAWN</h2>
+              <p class="venue-location" data-bind="venue-location">Near Al-syad Center, Quaid-Abad</p>
+
+              <div class="sky-rose-divider" style="margin: 1.5rem auto;" aria-hidden="true">
+                <span class="sky-rose-divider__line sky-rose-divider__line--left"></span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 4.5C13.6 6.7 15.8 7.5 16.4 9.8C17 12.1 14.9 14.4 12 14.4C9.1 14.4 7 12.1 7.6 9.8C8.2 7.5 10.4 6.7 12 4.5Z" fill="#9E1B32" fill-opacity="0.85" />
+                  <path d="M12 7.2C13 8.5 14 9.4 14 10.9C14 12.1 13.1 13 12 13C10.9 13 10 12.1 10 10.9C10 9.4 11 8.5 12 7.2Z" fill="#FCECEF" fill-opacity="0.4" />
+                  <path d="M12 14.5V19.5M12 17C10.3 16.5 9.2 15.6 8.6 14.8M12 17C13.7 16.5 14.8 15.6 15.4 14.8" stroke="#4F7963" stroke-width="1.2" stroke-linecap="round" />
+                </svg>
+                <span class="sky-rose-divider__line sky-rose-divider__line--right"></span>
+              </div>
+
+              <a
+                id="venue-map-link"
+                href="https://www.google.com/maps/search/?api=1&query=LALA+ZAAR+MARRIAGE+LAWN+Near+Al-syad+Center+Quaid-Abad"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-venue-map"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>View Location</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.8;" aria-hidden="true">
+                  <path d="M15 3h6v6" />
+                  <path d="M10 14 21 3" />
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- RSVP SECTION -->
+        <section id="rsvp" class="rsvp-section">
+          <div class="rsvp-card" data-reveal>
+            <div class="rose-cluster rose-cluster--tr" aria-hidden="true">
+              <div class="rose-cluster__mask">
+                <img data-img-src="rose-cluster" alt="" class="rose-cluster__img" referrerpolicy="no-referrer" />
+              </div>
+            </div>
+
+            <div class="rsvp-card__inner">
+              <p class="section-kicker">R.S.V.P</p>
+              <h2 class="rsvp-heading" data-bind="rsvp-heading">With love, we await your gracious presence.</h2>
+
+              <div class="sky-rose-divider" style="margin: 1.5rem auto;" aria-hidden="true">
+                <span class="sky-rose-divider__line sky-rose-divider__line--left"></span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 4.5C13.6 6.7 15.8 7.5 16.4 9.8C17 12.1 14.9 14.4 12 14.4C9.1 14.4 7 12.1 7.6 9.8C8.2 7.5 10.4 6.7 12 4.5Z" fill="#9E1B32" fill-opacity="0.85" />
+                  <path d="M12 7.2C13 8.5 14 9.4 14 10.9C14 12.1 13.1 13 12 13C10.9 13 10 12.1 10 10.9C10 9.4 11 8.5 12 7.2Z" fill="#FCECEF" fill-opacity="0.4" />
+                  <path d="M12 14.5V19.5M12 17C10.3 16.5 9.2 15.6 8.6 14.8M12 17C13.7 16.5 14.8 15.6 15.4 14.8" stroke="#4F7963" stroke-width="1.2" stroke-linecap="round" />
+                </svg>
+                <span class="sky-rose-divider__line sky-rose-divider__line--right"></span>
+              </div>
+
+              <p class="rsvp-host" data-bind="rsvp-host">Mr. &amp; Mrs. Babar Aziz</p>
+              <p class="rsvp-phone tabular-nums" data-bind="rsvp-phone">0313-2042174</p>
+
+              <div class="rsvp-actions">
+                <a id="rsvp-call-link" href="tel:03132042174" class="btn-call">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                  <span>Call RSVP</span>
+                </a>
+
+                <a
+                  id="rsvp-whatsapp-link"
+                  href="https://wa.me/923132042174"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-whatsapp"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                  </svg>
+                  <span>WhatsApp RSVP</span>
+                </a>
+              </div>
+
+              <div class="rsvp-share-bar">
+                <button type="button" id="copy-link-btn" class="share-link-btn">
+                  <svg data-icon-copy width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                  </svg>
+                  <svg data-icon-check class="is-hidden" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2E7D5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span data-copy-label>Copy Invitation Link</span>
+                </button>
+
+                <span class="share-sep" aria-hidden="true">·</span>
+
+                <a id="share-whatsapp-link" href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="share-link-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="18" cy="5" r="3" />
+                    <circle cx="6" cy="12" r="3" />
+                    <circle cx="18" cy="19" r="3" />
+                    <line x1="8.59" x2="15.42" y1="13.51" y2="17.49" />
+                    <line x1="15.41" x2="8.59" y1="6.51" y2="10.49" />
+                  </svg>
+                  <span>Share via WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FINAL CLOSING SECTION -->
+        <footer class="closing-footer">
+          <div class="closing-container" data-reveal>
+            <div class="rose-spray rose-spray--footer" aria-hidden="true">
+              <div class="rose-spray__mask">
+                <img data-img-src="rose-banner" alt="" class="rose-spray__img" referrerpolicy="no-referrer" />
+              </div>
+            </div>
+
+            <p class="closing-message" data-bind="closing-message">With love in our hearts,
+we await your gracious presence.</p>
+
+            <div class="closing-names">
+              <span data-bind="bride">Eman Babar</span>
+              <span class="closing-names__amp">&amp;</span>
+              <span data-bind="groom">Sheikh Saud Saeed</span>
+            </div>
+
+            <p class="closing-meta tabular-nums" data-bind="closing-meta">ULFAT-E-NIKAH · 23 December 2026</p>
+
+            <button type="button" id="replay-card-btn" class="btn-replay">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+                <path d="M3 3v5h5" />
+              </svg>
+              <span>Replay Opening Card</span>
+            </button>
+          </div>
+        </footer>
+      </main>
+
+      <!-- Optional user-initiated ambient melody toggle -->
+      <button
+        type="button"
+        id="audio-toggle-btn"
+        class="audio-toggle-btn"
+        aria-label="Play ambient melody"
+        title="Play ambient melody"
+      >
+        <svg id="audio-icon-on" class="is-hidden" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+          <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+        </svg>
+        <svg id="audio-icon-off" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+          <line x1="22" x2="16" y1="9" y2="15" />
+          <line x1="16" x2="22" y1="9" y2="15" />
+        </svg>
+      </button>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
