@@ -1,0 +1,8 @@
+{
+  "name": "ULFAT-E-NIKAH | Eman Babar & Sheikh Saud Saeed",
+  "description": "Digital Nikah invitation for Eman Babar and Sheikh Saud Saeed — 23 December 2026 at Lala Zaar Marriage Lawn, Quaid-Abad.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

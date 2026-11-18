@@ -1,0 +1,1202 @@
+You are a senior frontend architect, UI/UX designer, motion designer, animation specialist, and production web engineer.
+
+Build a complete, production-ready, premium animated Nikah invitation WEBSITE from scratch.
+
+IMPORTANT:
+
+This is a WEBSITE PROJECT ONLY.
+
+DO NOT build an Android application.
+DO NOT build an APK.
+DO NOT use Gradle.
+DO NOT use Android Studio.
+DO NOT use Capacitor.
+DO NOT use Cordova.
+DO NOT create an Android project.
+DO NOT create APK release workflows.
+DO NOT create AndroidManifest.xml.
+DO NOT create Kotlin or Java Android files.
+DO NOT create any mobile-app packaging system.
+
+The final product must be a beautiful responsive WEBSITE that can be published through GitHub Pages and shared through WhatsApp as a normal web link.
+
+==================================================
+1. PROJECT IDENTITY
+==================================================
+
+Website / Invitation Name:
+
+ULFAT-E-NIKAH
+
+Create a premium digital Nikah invitation experience with an elegant luxury wedding aesthetic.
+
+The website must feel like a professionally designed high-end digital wedding invitation, not like a generic website template.
+
+The design must be:
+
+- Premium
+- Elegant
+- Romantic
+- Soft
+- Clean
+- Modern
+- Sophisticated
+- High-end
+- Smooth
+- Emotionally beautiful
+- Mobile-first
+- Fully responsive
+- Fast loading
+- Touch friendly
+- Visually impressive
+
+The overall visual identity must use:
+
+PRIMARY PALETTE:
+- Pure white
+- Soft white
+- Light sky blue
+- Very subtle blue gradients
+
+ACCENT COLORS:
+- Elegant natural red
+- Deep rose red
+- Soft blush/red floral accents
+
+The website MUST NOT look dark.
+
+Do not use a black-heavy theme.
+
+Do not use an overly saturated blue.
+
+Do not use excessive gold.
+
+The dominant visual feeling should be:
+
+WHITE + SKY BLUE + ELEGANT RED ROSES
+
+The colors must blend naturally and professionally.
+
+==================================================
+2. EXACT WEDDING INFORMATION
+==================================================
+
+Use the following wedding information exactly:
+
+BRIDE:
+Eman Babar
+
+GROOM:
+Sheikh Saud Saeed
+
+DATE:
+23 December 2026
+
+NIKAH:
+8:00 PM
+
+DINNER:
+9:00 PM
+
+VENUE:
+LALA ZAAR MARRIAGE LAWN
+
+LOCATION:
+Near Al-syad Center, Quaid-Abad
+
+RSVP:
+Mr. & Mrs. Babar Aziz
+
+PHONE:
+0313-2042174
+
+Do not randomly change these details.
+
+Do not invent another bride name.
+
+Do not invent another groom name.
+
+Do not invent another date.
+
+Do not invent another venue.
+
+Do not replace the provided information with placeholder wedding information.
+
+Keep all wedding data centralized in one clearly organized configuration/data section so it can easily be edited later without searching through multiple files.
+
+==================================================
+3. MOST IMPORTANT VISUAL REQUIREMENT — EXACTLY TWO HANDS
+==================================================
+
+THIS IS A HARD REQUIREMENT AND MUST BE FOLLOWED EXACTLY.
+
+On the invitation card before it opens, DO NOT show:
+
+- Groom's face
+- Bride's face
+- Groom's full body
+- Bride's full body
+- Cartoon bride
+- Cartoon groom
+- Human portraits
+- Character stickers
+- Couple illustrations
+- Full human figures
+
+DO NOT SHOW THE BRIDE AND GROOM AS CHARACTERS.
+
+Instead, show EXACTLY:
+
+ONE BRIDE HAND
++
+ONE GROOM HAND
+
+ONLY TWO HANDS TOTAL.
+
+There must NEVER be three hands.
+
+There must NEVER be four hands.
+
+There must NEVER be duplicate hands.
+
+There must NEVER be additional fingers/hands appearing from the background.
+
+There must NEVER be a full bride or groom character.
+
+There must NEVER be a face.
+
+There must NEVER be a body.
+
+==================================================
+4. HAND POSITION — UPDATED FINAL REQUIREMENT
+==================================================
+
+The bride's hand and groom's hand must come naturally from opposite sides of the composition.
+
+ONE HAND FROM ONE SIDE.
+
+ONE HAND FROM THE OPPOSITE SIDE.
+
+The two hands must meet in the center.
+
+They must be HOLDING EACH OTHER naturally.
+
+The composition should resemble a romantic cinematic moment where a hero and heroine gently hold each other's hand.
+
+The hands should be layered naturally over/around each other as two people holding hands.
+
+The pose should communicate:
+
+LOVE
+TOGETHERNESS
+COMMITMENT
+NIKAH
+EMOTIONAL CONNECTION
+
+The hands must NOT look like two disconnected hands placed next to each other.
+
+They must clearly be physically holding each other.
+
+The fingers should naturally interlock or gently overlap in a believable hand-holding pose.
+
+The grip must be elegant and gentle, not aggressive.
+
+The wrist direction and finger positioning must be anatomically believable.
+
+The composition should look like:
+
+Bride's hand entering from the left/right side
++
+Groom's hand entering from the opposite side
++
+both hands meeting and holding each other in the center.
+
+The exact side can be chosen according to the most aesthetically balanced composition, but the two hands must clearly originate from opposite sides.
+
+==================================================
+5. HAND VISUAL STYLE
+==================================================
+
+The hands should be presented as a refined premium wedding-card illustration/animation.
+
+They must NOT look like:
+
+- Cheap cartoon stickers
+- Emojis
+- Childish illustrations
+- Generic clip-art
+- Flat icons
+- Anime characters
+- Full cartoon people
+
+Use:
+
+- Elegant proportions
+- Soft shading
+- Refined highlights
+- Natural finger shapes
+- Premium lighting
+- Subtle depth
+- Sophisticated illustrated styling
+- Cinematic soft glow
+
+The visual should feel suitable for an expensive luxury wedding invitation.
+
+Only the hands should be visible.
+
+No faces.
+
+No heads.
+
+No bodies.
+
+No characters.
+
+==================================================
+6. NO RING PLACEMENT ACTION
+==================================================
+
+IMPORTANT:
+
+Do NOT show the groom putting a ring onto the bride's finger.
+
+Do NOT show a ring-placement action.
+
+The final hand interaction is ONLY:
+
+THE BRIDE AND GROOM HOLDING EACH OTHER'S HANDS.
+
+A subtle wedding ring may be visible if aesthetically appropriate, but there must be no ring-placement action.
+
+Do not create a separate third hand to hold a ring.
+
+Do not create a separate ring ceremony animation.
+
+The primary visual is the romantic hand-holding pose.
+
+==================================================
+7. HAND ANIMATION
+==================================================
+
+The two hands should have a subtle, elegant animation.
+
+Animate:
+
+- very gentle movement
+- slight natural movement of the joined hands
+- subtle finger movement
+- soft light movement
+- delicate highlights
+- very subtle breathing-like motion
+- tiny floating rose petals
+- subtle sparkle around the hands
+
+The hands must remain connected throughout the animation.
+
+They must NOT separate.
+
+They must NOT move away from each other.
+
+They must NOT suddenly change pose.
+
+They must NOT morph.
+
+They must NOT generate extra fingers.
+
+They must NOT generate extra hands.
+
+The animation should communicate a gentle romantic moment.
+
+Think of a cinematic romantic scene where two people are quietly holding hands.
+
+Keep the movement slow, elegant and premium.
+
+==================================================
+8. OPENING CARD EXPERIENCE
+==================================================
+
+The first screen must feel like receiving a luxury physical wedding invitation.
+
+Create a beautiful centered invitation card/envelope.
+
+Background:
+
+- Soft white
+- Very light sky blue atmosphere
+- Subtle blurred floral elements
+- Elegant red roses
+- Tiny floating petals
+- Soft light particles
+- Premium depth
+- Very subtle shadows
+
+Do not overcrowd the screen.
+
+The card must be the main focus.
+
+On the front of the card, show:
+
+- Elegant floral decoration
+- White and sky-blue card design
+- Red rose accents
+- Exactly two hands
+- Romantic hand-holding pose
+- Elegant invitation typography
+
+Include a clear interactive CTA such as:
+
+"Open Invitation"
+
+The button must look premium and elegant.
+
+When the user taps/clicks the card or "Open Invitation":
+
+Create a cinematic opening animation.
+
+The card should:
+
+1. Slightly lift
+2. Create subtle depth
+3. Open elegantly
+4. Create a soft light reveal
+5. Release tiny rose petals
+6. Reveal the wedding information
+7. Transition smoothly into the main invitation experience
+
+Use smooth easing.
+
+Avoid sudden jumps.
+
+Avoid cheap bounce effects.
+
+Avoid excessive zoom.
+
+The animation should feel like a luxury digital wedding invitation.
+
+==================================================
+9. HERO / MAIN INVITATION
+==================================================
+
+After opening the card, reveal the main invitation beautifully.
+
+Display:
+
+"With the blessings of love and family"
+
+Then elegantly reveal:
+
+"Eman Babar"
+
+"&"
+
+"Sheikh Saud Saeed"
+
+Use refined typography.
+
+The names should be the visual focal point.
+
+Use elegant serif typography for names and a clean readable font for supporting text.
+
+The names should animate with:
+
+- Soft fade
+- Slight upward movement
+- Subtle letter spacing animation
+- Delicate glow
+- Floral/petal reveal
+
+Do not use aggressive animation.
+
+==================================================
+10. WEDDING MESSAGE / POETRY
+==================================================
+
+Include an elegant English wedding message/poetic section.
+
+Use beautiful original wording with a romantic, graceful tone.
+
+Create original wording suitable for a Nikah invitation.
+
+Keep it short, emotional and sophisticated.
+
+Do not copy text from another website.
+
+The poetry/message should be visually integrated into the invitation rather than appearing like a normal paragraph.
+
+==================================================
+11. DATE REVEAL
+==================================================
+
+Create a premium animated date reveal.
+
+Display:
+
+23
+December
+2026
+
+The date should appear with an elegant animation.
+
+Use:
+
+- Soft sky-blue glow
+- White card surface
+- Red rose/petal accents
+- Subtle sparkle
+- Smooth reveal
+
+Make the date feel important and luxurious.
+
+==================================================
+12. EVENT TIMELINE
+==================================================
+
+Create a beautiful wedding schedule section.
+
+NIKAH
+
+8:00 PM
+
+DINNER
+
+9:00 PM
+
+Use elegant cards or timeline elements.
+
+Animate each item when it enters the viewport.
+
+Use subtle:
+
+- Fade
+- Slide
+- Scale
+- Glow
+
+Do not overanimate.
+
+The design should remain premium.
+
+==================================================
+13. VENUE SECTION
+==================================================
+
+Create a beautiful venue section.
+
+Display:
+
+LALA ZAAR MARRIAGE LAWN
+
+Near Al-syad Center, Quaid-Abad
+
+Include an elegant location icon.
+
+Add a premium button:
+
+"View Location"
+
+The button must open a Google Maps search/location link for:
+
+LALA ZAAR MARRIAGE LAWN, Near Al-syad Center, Quaid-Abad
+
+Do not require the visitor to install anything.
+
+The map button must work on mobile and desktop.
+
+==================================================
+14. RSVP SECTION
+==================================================
+
+Create a premium RSVP section.
+
+Display:
+
+"With love, we await your gracious presence."
+
+Then:
+
+Mr. & Mrs. Babar Aziz
+
+0313-2042174
+
+Add two functional buttons:
+
+"Call RSVP"
+
+"WhatsApp RSVP"
+
+The WhatsApp button should open WhatsApp with the provided number.
+
+The phone button should open the device dialer on supported devices.
+
+Do not create fake buttons.
+
+Do not create non-functional UI.
+
+==================================================
+15. RED ROSE VISUAL SYSTEM
+==================================================
+
+Red roses are an important part of the visual identity.
+
+Use elegant red roses throughout the invitation.
+
+However:
+
+DO NOT overload the page with flowers.
+
+Use flowers strategically:
+
+- Card corners
+- Opening card
+- Hero section
+- Date section
+- Timeline
+- Venue section
+- RSVP section
+- Closing section
+
+Add subtle floating red rose petals.
+
+Petals should move slowly and naturally.
+
+Avoid excessive particles.
+
+The flowers should feel like premium wedding stationery.
+
+==================================================
+16. WHITE + SKY BLUE DESIGN SYSTEM
+==================================================
+
+The entire website must maintain visual consistency.
+
+Primary background:
+
+White / soft white.
+
+Secondary:
+
+Very light sky blue.
+
+Accent:
+
+Elegant rose red.
+
+Use subtle gradients such as:
+
+white → very light sky blue
+
+and
+
+soft white → extremely subtle blue tint.
+
+Red should be reserved mainly for:
+
+- Roses
+- Petals
+- Important romantic accents
+- Small decorative elements
+- Subtle highlights
+
+Do not turn the entire website red.
+
+Do not make the website dark.
+
+Do not use harsh neon colors.
+
+Do not use excessive shadows.
+
+==================================================
+17. PREMIUM ANIMATION SYSTEM
+==================================================
+
+The animation quality is extremely important.
+
+Use modern web animation techniques.
+
+Animations should include:
+
+- Card opening
+- Joined-hand movement
+- Rose petal movement
+- Soft particle movement
+- Name reveal
+- Section reveal
+- Scroll-triggered animations
+- Subtle hover effects
+- Button interactions
+- Smooth page transitions
+- Elegant fade-ins
+- Gentle parallax
+- Subtle floating flowers
+- Soft light movement
+
+Animations must be:
+
+Smooth
+Natural
+Premium
+Cinematic
+Lightweight
+Responsive
+
+Do not create chaotic animations.
+
+Do not make everything bounce.
+
+Do not use excessive spinning.
+
+Do not use old-fashioned animation effects.
+
+==================================================
+18. MOBILE EXPERIENCE
+==================================================
+
+The primary audience will likely open this invitation from WhatsApp on a mobile phone.
+
+Therefore MOBILE UX IS CRITICAL.
+
+The website must be perfectly responsive for:
+
+- Android phones
+- iPhones
+- Tablets
+- Desktop
+- Different screen sizes
+- Portrait mode
+- Landscape mode
+
+The invitation must look beautiful on a normal mobile screen.
+
+No horizontal scrolling.
+
+No broken layouts.
+
+No text overflow.
+
+No buttons outside the screen.
+
+No overlapping sections.
+
+No tiny unreadable text.
+
+No broken animations.
+
+Touch targets must be comfortable.
+
+The joined-hands visual must remain centered and properly scaled on mobile.
+
+==================================================
+19. PERFORMANCE REQUIREMENTS
+==================================================
+
+The website must be lightweight.
+
+Avoid unnecessary dependencies.
+
+Avoid huge libraries when a simple native implementation can accomplish the same task.
+
+Do not use unnecessary external APIs.
+
+Do not require a backend.
+
+Do not require a database.
+
+Do not require login.
+
+Do not require authentication.
+
+Do not require server-side code.
+
+The invitation must function as a static website.
+
+All important functionality must work on the client side.
+
+==================================================
+20. WEBSITE ARCHITECTURE
+==================================================
+
+Build this as a WEBSITE, not an app.
+
+Prefer a clean static architecture that is highly compatible with GitHub Pages.
+
+Use:
+
+HTML
+CSS
+JavaScript
+
+or a lightweight frontend structure only if absolutely necessary.
+
+The final repository must contain a clear web entry point:
+
+index.html
+
+The website must be able to work as a static GitHub Pages site.
+
+Do NOT create:
+
+- Android folder
+- Gradle files
+- Kotlin files
+- Java files
+- AndroidManifest.xml
+- Capacitor configuration
+- Cordova configuration
+- APK configuration
+- Mobile application build configuration
+
+==================================================
+21. GITHUB PAGES REQUIREMENTS
+==================================================
+
+The repository must be prepared specifically for GitHub Pages.
+
+Target publishing configuration:
+
+Source:
+Deploy from a branch
+
+Branch:
+main
+
+Folder:
+/ (root)
+
+The project should be structured so that the website can be published directly from:
+
+main branch
++
+root directory
+
+Do not require a separate APK build.
+
+Do not require a release artifact.
+
+Do not require Android signing.
+
+Do not require Gradle.
+
+Do not create an APK release workflow.
+
+Do not create unnecessary GitHub Actions workflows for deployment if the static website can be published directly through GitHub Pages branch deployment.
+
+Include whatever lightweight repository files are genuinely useful for a clean GitHub Pages website.
+
+Do not create unnecessary configuration files.
+
+==================================================
+22. GITHUB REPOSITORY CLEANLINESS
+==================================================
+
+The repository must look like a professional web project.
+
+Organize files clearly.
+
+Use sensible file naming.
+
+Do not generate random files.
+
+Do not generate duplicate files.
+
+Do not generate obsolete configuration.
+
+Do not leave broken imports.
+
+Do not reference missing files.
+
+==================================================
+23. GITHUB / AI STUDIO CHANGE MANAGEMENT
+==================================================
+
+Prepare the project as a normal GitHub-compatible web repository.
+
+All generated files must be internally consistent.
+
+Every import must point to an existing file.
+
+Every referenced asset must exist.
+
+Every script must load correctly.
+
+Every stylesheet must load correctly.
+
+The repository must be clean enough that changes can be staged and committed normally through the GitHub-connected workflow.
+
+IMPORTANT:
+
+Do not attempt to create or force an Android/APK workflow.
+
+Do not add mobile application release settings.
+
+Do not add APK build settings.
+
+Do not create an Android release branch.
+
+The intended repository workflow is:
+
+Create/Edit website
+→ Stage changes
+→ Commit changes
+→ Push/sync repository
+→ GitHub repository
+→ Settings
+→ Pages
+→ Deploy from a branch
+→ main
+→ /(root)
+→ Save
+→ Website published
+
+The project itself must be prepared for this workflow.
+
+IMPORTANT TECHNICAL LIMITATION:
+
+Do not claim that source code can control whether Google AI Studio displays a UI button named "Stage and commit all changes" or "Push to repository".
+
+Those buttons belong to the Google AI Studio/GitHub integration interface.
+
+Your responsibility is to produce a clean, valid, website-only repository that is compatible with normal Git version control and GitHub Pages.
+
+==================================================
+24. ERROR PREVENTION — VERY IMPORTANT
+==================================================
+
+Before finishing, perform a complete internal consistency check of the generated project.
+
+Check for:
+
+- Broken HTML
+- Broken CSS
+- Broken JavaScript
+- Missing files
+- Missing assets
+- Invalid imports
+- Incorrect file paths
+- Incorrect relative paths
+- JavaScript runtime errors
+- Undefined variables
+- Invalid HTML structure
+- Mobile layout problems
+- Desktop layout problems
+- Broken buttons
+- Broken navigation
+- Broken Google Maps link
+- Broken WhatsApp link
+- Broken phone link
+- Animation errors
+- Console errors
+- Missing fonts
+- Unsupported browser features
+- Incorrect asset references
+- Duplicate IDs
+- Invalid selectors
+- GitHub Pages path problems
+
+Fix every issue you find before considering the project complete.
+
+Do not knowingly leave warnings or errors.
+
+==================================================
+25. GITHUB PAGES PATH SAFETY
+==================================================
+
+The website must work correctly when hosted under a GitHub Pages project URL.
+
+Avoid absolute paths that could break under a repository subpath.
+
+Use safe relative paths where appropriate.
+
+Test all internal links and assets conceptually for GitHub Pages compatibility.
+
+==================================================
+26. ACCESSIBILITY
+==================================================
+
+Use proper semantic HTML.
+
+Buttons must be real buttons or links.
+
+Images/illustrations should have appropriate alternative descriptions where needed.
+
+Maintain readable contrast.
+
+Do not sacrifice readability for decoration.
+
+Keyboard interaction should work on desktop.
+
+Touch interaction should work on mobile.
+
+==================================================
+27. MUSIC / AUDIO
+==================================================
+
+If background music is included, do not force autoplay with sound because modern browsers may block it.
+
+Instead provide an elegant optional music control.
+
+The invitation must remain fully functional even if audio is unavailable or disabled.
+
+Do not make the website dependent on music.
+
+==================================================
+28. FINAL CLOSING SECTION
+==================================================
+
+End the invitation with a beautiful emotional closing.
+
+Include:
+
+"With love in our hearts,
+we await your gracious presence."
+
+Then display:
+
+Eman Babar
+&
+Sheikh Saud Saeed
+
+Use elegant floral decoration and a final soft rose-petal animation.
+
+The final screen should feel peaceful, romantic and memorable.
+
+==================================================
+29. DESIGN QUALITY STANDARD
+==================================================
+
+Do not produce a basic template.
+
+Do not produce a generic wedding website.
+
+Do not produce a plain HTML page with text and buttons.
+
+Think like a premium wedding invitation studio.
+
+The result should look like a professionally commissioned digital invitation.
+
+Prioritize:
+
+- Visual hierarchy
+- Typography
+- Spacing
+- Composition
+- Animation
+- Micro-interactions
+- Color harmony
+- Mobile experience
+- Emotional storytelling
+
+Every section should feel connected to the same wedding-card design system.
+
+==================================================
+30. REFERENCE INSPIRATION
+==================================================
+
+Use the previously described/reference wedding invitation style only as visual inspiration.
+
+Do not copy another website's exact design.
+
+Do not copy copyrighted artwork.
+
+Do not copy another site's branding.
+
+Create an original design that is more polished, refined and premium.
+
+==================================================
+31. FINAL HAND CONFIGURATION — ABSOLUTE HARD RULE
+==================================================
+
+Before completing the project, verify this exact requirement:
+
+THERE MUST BE EXACTLY TWO HANDS.
+
+ONE BRIDE HAND.
+
+ONE GROOM HAND.
+
+THE TWO HANDS MUST COME FROM OPPOSITE SIDES.
+
+THE TWO HANDS MUST MEET IN THE CENTER.
+
+THE TWO HANDS MUST BE HOLDING EACH OTHER.
+
+THE POSE MUST LOOK LIKE A ROMANTIC HERO-AND-HEROINE HAND-HOLDING MOMENT FROM A CINEMATIC LOVE SCENE.
+
+The hands must naturally overlap/interlock.
+
+The grip must look physically believable.
+
+The hands must remain connected during animation.
+
+There must be:
+
+NO third hand.
+
+NO fourth hand.
+
+NO extra fingers.
+
+NO duplicate hand.
+
+NO face.
+
+NO head.
+
+NO body.
+
+NO bride character.
+
+NO groom character.
+
+NO cartoon people.
+
+NO full-body illustration.
+
+NO ring-placement action.
+
+ONLY:
+
+BRIDE HAND + GROOM HAND + NATURAL HAND-HOLDING POSE.
+
+This requirement has higher priority than decorative animation.
+
+If an animation conflicts with this requirement, preserve the correct two-hand composition and simplify the animation.
+
+==================================================
+32. FINAL VALIDATION
+==================================================
+
+Before presenting the project as complete, verify ALL of the following:
+
+[✓] New project created from scratch
+[✓] Website only
+[✓] No APK
+[✓] No Android
+[✓] No Gradle
+[✓] No Capacitor
+[✓] No Cordova
+[✓] No Android release workflow
+[✓] No APK GitHub workflow
+[✓] Clean web architecture
+[✓] Valid package/configuration if framework is used
+[✓] Build-ready
+[✓] GitHub-ready
+[✓] main branch compatible
+[✓] GitHub Pages compatible
+[✓] root deployment compatible
+[✓] Assets compatible with Pages
+[✓] Responsive
+[✓] Premium white + sky-blue design
+[✓] Elegant red roses
+[✓] Cinematic opening card
+[✓] Card opening animation
+[✓] Exactly two hands
+[✓] One bride hand
+[✓] One groom hand
+[✓] Hands come from opposite sides
+[✓] Hands are physically holding each other
+[✓] No bride/groom faces
+[✓] No full bride/groom characters
+[✓] No extra hands
+[✓] No ring-placement action
+[✓] Scratch Me interaction
+[✓] Date reveal
+[✓] Nikah details
+[✓] Dinner details
+[✓] Venue
+[✓] Google Maps button
+[✓] RSVP
+[✓] Call button
+[✓] WhatsApp button
+[✓] English wedding poetry
+[✓] Floral animation
+[✓] Mobile optimized
+[✓] Desktop optimized
+[✓] No placeholder content
+[✓] No broken links
+[✓] No broken imports
+[✓] No missing assets
+[✓] No obvious runtime errors
+[✓] No unnecessary dependencies
+[✓] No exposed secrets
+[✓] Clean README
+[✓] Clean .gitignore
+[✓] Native GitHub workflow compatibility
+
+==================================================
+33. FINAL EXECUTION INSTRUCTION
+==================================================
+
+Do not give me a tutorial instead of building the project.
+
+Do not give me pseudo-code.
+
+Do not give me a partial implementation.
+
+Do not give me a visual mockup only.
+
+Do not leave TODO placeholders.
+
+Do not leave unfinished sections.
+
+Do not ask me to manually write missing code.
+
+Actually create the complete website project.
+
+Write the complete code.
+
+Create all required files.
+
+Create all required components.
+
+Create all required styles.
+
+Create all required animations.
+
+Create all required interactions.
+
+Create all required wedding sections.
+
+Configure the project for GitHub.
+
+Make the project compatible with GitHub Pages.
+
+Fix all technical errors you encounter.
+
+Perform a final consistency check before considering the project complete.
+
+FINAL OBJECTIVE:
+
+A complete premium ULFAT-E-NIKAH digital Nikah invitation website.
+
+The user should be able to:
+
+Google AI Studio
+→ connect/sync the project with GitHub
+→ stage and commit the website changes through the native Git workflow
+→ push/sync to the GitHub repository
+→ open GitHub Settings
+→ Pages
+→ Deploy from a branch
+→ main
+→ /(root)
+→ Save
+→ receive the live website URL
+→ copy the URL
+→ share it directly on WhatsApp.
+
+The final product must remain WEBSITE ONLY.
+
+NO APK.
+NO ANDROID.
+NO GRADLE.
+NO MOBILE APP BUILD SYSTEM.
+
+The final visual centerpiece must contain EXACTLY TWO HANDS:
+
+ONE BRIDE HAND
++
+ONE GROOM HAND
+
+coming from opposite sides and naturally holding each other in a beautiful cinematic romantic pose.
+
+Make the final result premium, elegant, emotional, technically clean, responsive, original and production-ready.
